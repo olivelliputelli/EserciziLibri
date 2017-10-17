@@ -4,14 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Console1
+namespace EserciziCicloFOR_2
 {
     class Program
     {
         static void Main(string[] args)
         {
-            FOR_2_Es1();
+            FOR_2_ES3();
         }
+
 
         /// <summary>
         /// Visualizzare sullo schermo i primi N numeri naturali, con N letto da tastiera. 
@@ -19,7 +20,7 @@ namespace Console1
         /// </summary>
         static void FOR_2_Es1()
         {
-            Console.WriteLine("*** ES. 1 ***");
+            Console.WriteLine("*** FOR-2 ES. 1 ***");
             Console.Write("Numero di numeri naturali da visualizzare: ");
             int numeroDiNumeriNaturali = int.Parse(Console.ReadLine());
 
@@ -32,9 +33,22 @@ namespace Console1
             Console.WriteLine(output);
         }
 
+        /// <summary>
+        /// Visualizzare sullo schermo i numeri pari da 1 a  N , con N letto da tastiera.
+        /// </summary>
         static void FOR_2_ES3()
         {
+            Console.WriteLine("*** FOR-2 ES. 3 ***");
+            Console.Write("Estremo superiore: ");
+            int estremoSuperiore = int.Parse(Console.ReadLine());
 
+            string output = $"Numeri pari da 1 a {estremoSuperiore}: ";
+            for (int i = 2; i <= estremoSuperiore; i += 2)
+            {
+                output += i + ", ";
+            }
+            output += "\b\b.";
+            Console.WriteLine(output);
         }
 
         /// <summary>
@@ -61,29 +75,6 @@ namespace Console1
 
 
 
-
-        /// <summary>
-        /// Fattoriale
-        /// </summary>
-        static void FOR_3_Es6()
-        {
-            Console.WriteLine("*** ES. 1 ***");
-            //Console.Write("Numero da calcolare il fattoriale: ");
-            //int n = int.Parse(Console.ReadLine());
-            for (int n = 1; ; n++)
-            {
-                long fattoriale = 1;
-
-                for (int i = 1; i <= n; i++)
-                {
-                    fattoriale *= i;
-                }
-                if (fattoriale < 0)
-                    break;
-                Console.WriteLine($"{n}! = {fattoriale:N0}");
-            }
-
-        }
 
 
     }

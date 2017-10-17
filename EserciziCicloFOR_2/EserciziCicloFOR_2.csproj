@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E81AA0EA-142B-469B-B478-CD1C0C6607A5}</ProjectGuid>
+    <ProjectGuid>{A363A082-D52B-45B7-B5BC-7A24AA3E4E0D}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Console1</RootNamespace>
-    <AssemblyName>Console1</AssemblyName>
+    <RootNamespace>EserciziCicloFOR_2</RootNamespace>
+    <AssemblyName>EserciziCicloFOR_2</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
