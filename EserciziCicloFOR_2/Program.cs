@@ -1,18 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace EserciziCicloFOR_2
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            FOR_2_ES3();
+            //FOR_2_Es1();
+            FOR_2_Es2();
+            //FOR_2_ES3();
+            //FOR_2_Es11();
         }
-
 
         /// <summary>
         /// Visualizzare sullo schermo i primi N numeri naturali, con N letto da tastiera. 
@@ -30,6 +28,24 @@ namespace EserciziCicloFOR_2
                 output += i + ", ";
             }
             output += "\b\b.";
+            Console.WriteLine(output);
+        }
+
+        /// <summary>
+        /// Visualizzare sullo schermo i primi N numeri naturali, 
+        /// con N letto da tastiera IN ORDINE INVERSO. (programma e flow-chart)
+        /// </summary>
+        static void FOR_2_Es2()
+        {
+            Console.WriteLine("*** FOR-2 ES. 2 ***");
+            Console.Write("Estremo superiore: ");
+            int estremoSuperiore = int.Parse(Console.ReadLine());
+
+            string output = $"Numeri naturali da {estremoSuperiore} a 0: ";
+            for (int i = estremoSuperiore; i >= 0; i--)
+                output += i + ", ";
+            output += "\b\b.";
+
             Console.WriteLine(output);
         }
 
@@ -72,10 +88,6 @@ namespace EserciziCicloFOR_2
                 Console.WriteLine($"Partita numero {i}:\t{pronostico}");
             }
         }
-
-
-
-
 
     }
 }

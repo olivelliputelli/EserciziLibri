@@ -6,7 +6,8 @@ namespace EserciziCicloFOR_3
     {
         static void Main()
         {
-            FOR_3_Es5();
+            //FOR_3_Es5();
+            //FOR_3_Es6();
         }
 
         /// <summary>
