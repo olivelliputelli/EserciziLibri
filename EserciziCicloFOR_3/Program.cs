@@ -6,8 +6,32 @@ namespace EserciziCicloFOR_3
     {
         static void Main()
         {
+            FOR_3_Es3();
             //FOR_3_Es5();
             //FOR_3_Es6();
+        }
+
+        /// <summary>
+        /// Chiedere 2 numeri interi (a,b) e disegnare un 
+        /// rettangolo pieno di dimensioni a*b usando il carattere  " * ". 
+        /// </summary>
+        static void FOR_3_Es3()
+        {
+            int @base, altezza;
+            Console.WriteLine("*** FOR-3 ES. 3 ***");
+            Console.Write("Base: ");
+            @base = int.Parse(Console.ReadLine());
+            Console.Write("Altezza: ");
+            altezza = int.Parse(Console.ReadLine());
+
+            for (int r = 0; r < altezza; r++)
+            {
+                for (int c = 0; c < @base; c++)
+                {
+                    Console.Write("* ");
+                }
+                Console.WriteLine();
+            }
         }
 
         /// <summary>

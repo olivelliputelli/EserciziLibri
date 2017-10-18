@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EserciziCicloFOR_2", "Eserc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EserciziCicloFOR_3", "EserciziCicloFOR_3\EserciziCicloFOR_3.csproj", "{A551E095-F6F0-42E2-A433-5AB3541EF472}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EserciziCicloWhileDoWhile", "EserciziCicloWhileDoWhile\EserciziCicloWhileDoWhile.csproj", "{FB048BD7-F7C4-43FB-B55E-A886CA11CECF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{A551E095-F6F0-42E2-A433-5AB3541EF472}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A551E095-F6F0-42E2-A433-5AB3541EF472}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A551E095-F6F0-42E2-A433-5AB3541EF472}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB048BD7-F7C4-43FB-B55E-A886CA11CECF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB048BD7-F7C4-43FB-B55E-A886CA11CECF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB048BD7-F7C4-43FB-B55E-A886CA11CECF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB048BD7-F7C4-43FB-B55E-A886CA11CECF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
