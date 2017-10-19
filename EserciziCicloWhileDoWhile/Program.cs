@@ -6,7 +6,30 @@ namespace EserciziCicloWhileDoWhile
     {
         static void Main()
         {
-            WHILEDOWHILE_Es3();
+            //WHILEDOWHILE_Es1();
+            //WHILEDOWHILE_Es3();
+            WHILEDOWHILE_Es6();
+        }
+
+        /// <summary>
+        /// Scrivere un programma in linguaggio C# che legga da tastiera una sequenza di 
+        /// numeri positivi e ad ogni numero letto ne stampi la somma progressiva. 
+        /// Il programma termina quando si introduce un numero minore o uguale a zero.
+        /// </summary>
+        static void WHILEDOWHILE_Es1()
+        {
+            int n, somma = 0;
+            Console.WriteLine("*** WHILEDOWHILE ES. 1 ***");
+            do
+            {
+                Console.Write("N: ");
+                n = int.Parse(Console.ReadLine());
+                if (n <= 0)
+                    break;
+                somma += n;
+                Console.WriteLine($"out = {somma}");
+            } while (n > 0);
+            Console.WriteLine("Fine!");
         }
 
         /// <summary>
@@ -25,6 +48,42 @@ namespace EserciziCicloWhileDoWhile
             while (n > 127)
                 n -= 128;
             Console.WriteLine($"il numero {n} corrisponde al carattere {(char)n}");
+        }
+
+        /// <summary>
+        /// Utilizza un ciclo while per dividere due interi attraverso sottrazioni successive, 
+        /// fornendo in uscita il quoto e il resto della divisione.
+        /// </summary>
+        static void WHILEDOWHILE_Es6()
+        {
+            Console.WriteLine("*** WHILEDOWHILE ES. 6 ***");
+            int dividendo, divisore;
+            int resto, quoto;
+            int restoPositivo, quotoPositivo, divisorePositivo;
+
+            // input
+            Console.Write("Dividendo: ");
+            dividendo = int.Parse(Console.ReadLine());
+            Console.Write("Divisore: ");
+            divisore = int.Parse(Console.ReadLine());
+
+            // elaborazione
+            restoPositivo = Math.Abs(dividendo);
+            quotoPositivo = 0;
+            divisorePositivo = Math.Abs(divisore);
+            while (restoPositivo >= divisorePositivo)
+            {
+                quotoPositivo++;
+                restoPositivo -= divisorePositivo;
+            }
+
+            resto = Math.Sign(dividendo) * restoPositivo;
+            quoto = Math.Sign(divisore) * Math.Sign(dividendo) * quotoPositivo;
+
+            // output
+            Console.WriteLine("Operazione\tMath\tWhile");
+            Console.WriteLine($"Quoto = \t{dividendo / divisore}\t{quoto}");
+            Console.WriteLine($"Resto = \t{dividendo % divisore}\t{resto}");
         }
     }
 }

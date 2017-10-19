@@ -9,8 +9,8 @@ namespace EserciziCicloFOR_2
             //FOR_2_Es1();
             //FOR_2_Es2();
             //FOR_2_ES3();
-            //FOR_2_Es7();
-            FOR_2_Es8();
+            FOR_2_Es7();
+            //FOR_2_Es8();
             //FOR_2_Es11();
         }
 
@@ -131,13 +131,13 @@ namespace EserciziCicloFOR_2
             Console.WriteLine("*** ES. 11 ***");
             Console.Write("Numero di partite: ");
             int numeroDiPartite = int.Parse(Console.ReadLine());
-            int da1a3;
-            string pronostico = "X";
+            int da0a2;
+            string pronostico = "";
 
             for (int i = 1; i <= numeroDiPartite; i++)
             {
-                da1a3 = generatoreNumeriCasuali.Next(0, 3);
-                pronostico = (da1a3 == 0) ? "X" : da1a3.ToString();
+                da0a2 = generatoreNumeriCasuali.Next(0, 3);
+                pronostico = (da0a2 == 0) ? "X" : da0a2.ToString();
                 Console.WriteLine($"Partita numero {i}:\t{pronostico}");
             }
         }    
