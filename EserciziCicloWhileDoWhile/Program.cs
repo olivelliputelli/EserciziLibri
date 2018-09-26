@@ -7,8 +7,11 @@ namespace EserciziCicloWhileDoWhile
         static void Main()
         {
             //WHILEDOWHILE_Es1();
+            WHILEDOWHILE_Es2();
             //WHILEDOWHILE_Es3();
-            WHILEDOWHILE_Es6();
+            //WHILEDOWHILE_Es6();
+            Console.WriteLine("FINE!!");
+            Console.ReadLine();
         }
 
         /// <summary>
@@ -33,6 +36,30 @@ namespace EserciziCicloWhileDoWhile
         }
 
         /// <summary>
+        /// Si scriva un programma in linguaggio C# che acquisisca da tastiera 
+        /// una parola (cioè una stringa di caratteri priva di separatori) 
+        /// e la stampi a video se e solo se tale parola è palindroma, 
+        /// ossia leggibile nello stesso modo da destra a sinistra e viceversa (es. OSSESSO). 
+        /// </summary>
+        static void WHILEDOWHILE_Es2()
+        {
+            Console.WriteLine("*** WHILEDOWHILE ES. 2 ***");
+            Console.Write("Inserisci parola: ");
+            string parola = Console.ReadLine();
+
+            if (IsPalindroma(parola))
+                Console.WriteLine(parola);
+        }
+        static bool IsPalindroma(string parola)
+        {
+            int l = parola.Length;
+            for (int i = 0; i < l / 2; i++)
+                if (parola[i] != parola[l - 1 - i])
+                    return false;
+            return true;
+        }
+
+        /// <summary>
         /// Si scriva un programma in linguaggio C# che legga da tastiera un numero intero A, 
         /// lo riduca ad un valore compreso tra 0 e 127 mediante sottrazione ripetuta di un 
         /// adeguato numero di volte del valore 128 (non si utilizzi l’operatore modulo o and), 
@@ -44,10 +71,22 @@ namespace EserciziCicloWhileDoWhile
             Console.WriteLine("*** WHILEDOWHILE ES. 3 ***");
             Console.Write("N: ");
             n = int.Parse(Console.ReadLine());
+            if (n > 0)
+            {
+                while (n > 127)
+                    n -= 128;
+                Console.WriteLine($"il numero {n} corrisponde al carattere {(char)n}");
+            }
+            else
+            {
+                Console.WriteLine($"Numero non valido!");
+            }
+        }
 
-            while (n > 127)
-                n -= 128;
-            Console.WriteLine($"il numero {n} corrisponde al carattere {(char)n}");
+        static void WHILEDOWHILE_Es4()
+        {
+            int n;
+            Console.WriteLine("*** WHILEDOWHILE ES. 3 ***");
         }
 
         /// <summary>
