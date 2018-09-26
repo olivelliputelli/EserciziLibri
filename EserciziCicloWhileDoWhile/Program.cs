@@ -2,14 +2,16 @@
 
 namespace EserciziCicloWhileDoWhile
 {
-    class Program
+    public class Program
     {
         static void Main()
         {
             //WHILEDOWHILE_Es1();
-            WHILEDOWHILE_Es2();
+            //WHILEDOWHILE_Es2();
             //WHILEDOWHILE_Es3();
+            WHILEDOWHILE_Es5();
             //WHILEDOWHILE_Es6();
+
             Console.WriteLine("FINE!!");
             Console.ReadLine();
         }
@@ -83,10 +85,40 @@ namespace EserciziCicloWhileDoWhile
             }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         static void WHILEDOWHILE_Es4()
         {
-            int n;
-            Console.WriteLine("*** WHILEDOWHILE ES. 3 ***");
+            Console.WriteLine("*** WHILEDOWHILE ES. 4 ***");
+        }
+
+        /// <summary>
+        /// Usa un ciclo do-while per eseguire il 
+        /// prodotto di due numeri interi attraverso somme successive. 
+        /// </summary>
+        static void WHILEDOWHILE_Es5()
+        {
+            Console.WriteLine("*** WHILEDOWHILE ES. 5 ***");
+
+        }
+
+        public static int ProdottoDo(int n1, int n2)
+        {
+            if (n1 == 0 || n2 == 0)
+                return 0;
+            int a = Math.Abs(n1);
+            int b = Math.Abs(n2);
+            int prodotto = 0;
+            do
+            {
+                prodotto += a;
+                b--;
+            } while (b > 0);
+
+            if (n1 < 0 ^ n2 < 0)
+                return -prodotto;
+            return prodotto;
         }
 
         /// <summary>
